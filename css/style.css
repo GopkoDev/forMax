@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.header {
+  padding: 45px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.header__container {
+  max-width: 962px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo__wrapper__title {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header__logo__wrapper__subtitle {
+  font-family: 'Inter';
+  font-size: 14px;
+  line-height: 17px;
+  color: #9d9d9d;
+  white-space: nowrap;
+}
+.header__logo_img {
+  margin-right: 16px;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.header__user__cart {
+  display: flex;
+  align-items: center;
+}
+
+.header__user__cart img {
+  margin: 0px 10px 0px 0px;
+}
+
+.header__user__cart a {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+.header__user__cart a:hover {
+  color: rebeccapurple;
+  cursor: pointer;
+}
