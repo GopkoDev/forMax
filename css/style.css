@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.container {
+  max-width: 962px;
+  margin: 0 auto;
+}
+
 .header {
   padding: 45px 0;
   border-bottom: 1px solid #eaeaea;
 }
 .header__container {
-  max-width: 962px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -59,4 +63,103 @@
 .header__user__cart a:hover {
   color: rebeccapurple;
   cursor: pointer;
+}
+
+.banner {
+  padding: 40px 0;
+}
+.banner__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4efe9;
+  border-radius: 20px;
+  position: relative;
+}
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0 51px 17px;
+  width: 30%;
+}
+.banner__text__logo {
+  align-self: flex-start;
+  margin-bottom: 32px;
+}
+.banner__text__title {
+  max-width: 222px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #8bb43c;
+  margin-bottom: 21px;
+}
+.banner__text__title span {
+  color: #000;
+}
+.banner__text__button {
+  background: #a5d364;
+  border-radius: 110px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 55px;
+  border: none;
+  transition: 300ms;
+}
+
+.banner__text__button:hover {
+  background: #c0f27a;
+}
+
+.banner__image {
+  display: flex;
+}
+
+.banner__image img {
+  width: 100%;
+  justify-self: flex-end;
+}
+
+.banner_arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%) translateX(50%);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+  transition: 300ms;
+}
+.banner_arrow::before,
+.banner_arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 1.5px;
+  background-color: #c8c8c8;
+  transform-origin: 100%;
+}
+.banner_arrow::before {
+  transform: translate(-50%) rotate(45deg);
+}
+.banner_arrow::after {
+  transform: translate(-50%) rotate(-45deg);
+}
+
+.banner_arrow:hover {
+  background-color: #c8c8c8;
+}
+.banner_arrow:hover::before,
+.banner_arrow:hover::after {
+  background-color: #fff;
 }
